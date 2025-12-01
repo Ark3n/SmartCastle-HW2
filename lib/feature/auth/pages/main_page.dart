@@ -50,11 +50,14 @@ class MainPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.pushNamed(context, 'joinUs');
                       },
-                      child: Text(
-                        'Join Us',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 15.0),
+                        child: Text(
+                          'Join Us',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
                         ),
                       ),
                     ),
@@ -66,11 +69,14 @@ class MainPage extends StatelessWidget {
                         side: BorderSide(color: Colors.white),
                       ),
                       onPressed: () => Navigator.pushNamed(context, 'signIn'),
-                      child: Text(
-                        'Sign In',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 15.0),
+                        child: Text(
+                          'Sign In',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
